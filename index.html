@@ -60,12 +60,77 @@
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button data-modal-open class="hero-button">Order Service</button>
           <div data-modal class="backdrop is-hidden">
-            <div class="model">
-              <button data-modal-close class="model-btn">
-                <svg class="model-icon" width="8" height="8">
+            <div class="modal">
+              <button data-modal-close class="modal-btn">
+                <svg class="modal-icon" width="8" height="8">
                   <use href="./images/symbol-defs-v.svg#icon-vector"></use>
                 </svg>
               </button>
+              <h2 class="modal-title">
+                Leave your contacts and we will call you back
+              </h2>
+
+              <form class="form">
+                <div class="form-field">
+                  <label class="form-lable" for="name">Name</label>
+                  <input class="form-input" type="text" id="name" name="name" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs-v.svg#person"></use>
+                  </svg>
+                </div>
+                <div class="form-field">
+                  <label class="form-lable" for="tel">Phone</label>
+                  <input class="form-input" type="tel" id="tel" name="tel" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs-v.svg#phone"></use>
+                  </svg>
+                </div>
+                <div class="form-field">
+                  <label class="form-lable" for="mail">Email</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="mail"
+                    name="mail"
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs-v.svg#email"></use>
+                  </svg>
+                </div>
+                <div class="form-field">
+                  <label class="form-lable" for="comment"> Comment </label>
+                  <textarea
+                    class="form-textarea"
+                    name="comment"
+                    cols="30"
+                    rows="10"
+                    id="comment"
+                    placeholder="Text input"
+                  ></textarea>
+                </div>
+
+                <div class="form-field-checkbox">
+                  <input
+                    class="form-checkbox visually-hidden"
+                    type="checkbox"
+                    id="accept"
+                    name="accept"
+                  />
+                  <label class="form-lable-checkbox" for="accept">
+                    <span>
+                      <svg class="checkbox-icon" width="10" height="8">
+                        <use
+                          class="checkbox-icon-item"
+                          href="./images/symbol-defs-v.svg#vector"
+                        ></use>
+                      </svg>
+                    </span>
+                    I accept the terms and conditions of the
+                    <a href="#">Privacy Policy</a>
+                  </label>
+                </div>
+                <button class="form-btn" type="submit">Send</button>
+              </form>
             </div>
           </div>
         </div>
@@ -414,6 +479,18 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <h3 class="section-subtitle footer-subtitle">Subscribe</h3>
+          <form class="form-futer">
+            <label class="futer-lable"
+              ><input type="email" class="futer-input" placeholder="E-mail"
+            /></label>
+
+            <button class="futer-form-btn" type="submit">
+              <span class="futer-form-btn-subscribe">Subscribe</span>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
